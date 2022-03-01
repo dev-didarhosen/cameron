@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+
+/* nav bar section part */
+.navbar {
+	position: absolute;
+	left: 0;
+	top: -289px;
+	height: 100%;
+	width: 100%;
+	z-index: 999;
+}
+.navbar-brand {
+	transform: scale(.9);
+}
+.nav-item {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+	padding-right: 0;
+	padding-left: 0;
+	padding-top: 18px;
+	padding-bottom: 18px;
+}
+  .nav-link{
+      position: relative;
+  }
+
+  .nav-link::after{
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 3px;
+      width: 0;
+      background: #3a85c9;
+      transition: all linear .3s;
+      opacity: 0;
+      -webkit-transition: all linear .3s;
+      -moz-transition: all linear .3s;
+      -ms-transition: all linear .3s;
+      -o-transition: all linear .3s;
+}
+
+  .nav-item:hover .nav-link::after{
+      opacity: 1;
+      width: 100%;
+  }
+
+  .nav-icon {
+	padding-left: 30px;
+}
+
+  .nav-icon i{
+      height: 40px;
+      width: 40px;
+      line-height: 40px;
+      text-align: center;
+      background: #3a85c9;
+      border-radius: 50%;
+      color: #fff;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      
+}
+
+.nav-link{
+    font-size: 16px;
+    text-transform: capitalize;
+    font-family: 'Open Sans', sans-serif;
+    color: #444;
+}
+
+
+/* banner section part */
+
+#banner-section{
+    background: url(../images/banner-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 160px;
+    padding-bottom: 100px;
+    position: relative;
+}
+
+.ban-text h1{
+    font-size:72px;
+    color: #3a85c9;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+.ban-text span{
+    font-weight: 400;
+    font-family: 'Abril Fatface', cursive;
+}
+.banner-btn{
+    padding-top: 38px;
+    
+}
+
+.banner-btn a {
+	background: #fff;
+	padding: 16px 22px;
+	border-radius: 30px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	-ms-border-radius: 30px;
+	-o-border-radius: 30px;
+	display: inline-block;
+	font-size: 20px;
+	text-align: center;
+    box-shadow: 1px 13px 27px -11px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 1px 13px 27px -11px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 13px 27px -11px rgba(0,0,0,0.75);
+}
+
+.ban-image {
+	position: absolute;
+	top: 211px;
+}
